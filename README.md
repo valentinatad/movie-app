@@ -13,4 +13,7 @@ In the project directory, you must run:
 ## About app
 In this app you can search for you favorite movie, series or game.<br>
 
+## Link of project:
+https://github.com/valentinatad/movie-app
+
 
