@@ -1,38 +1,105 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  width:100%;
+  height: 100%;
+  margin: 0;
+  background: linear-gradient(rgba(38, 39, 39, 0.7), rgba(32, 28, 28, 0.5)), url("movie.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-flow: column;
+}
+.nav-link {
+  margin-left: 50px !important;
+}
+.white {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.white:hover {
+  transform: scale(1.2);
+  color: grey;
+  transition: all 300ms;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.filter p {
+  margin-right: 10px;
+  font-family: 'Special Elite', cursive;
+}
+.nav-link:hover {
+  color: black !important;
+  font-weight: bold !important;
+  transform: scale(1);
+  transition: all 300ms !important;
+}
+.search {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.search button {
+  background-color: rgb(48, 36, 36);
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
+  margin-left: 20px;
+  
+}
+.search button:hover {
+  transform: scale(1.2);
+  background-color: grey;
+  transition: all 300ms;
+}
+#inputFilter {
+  width: 300px;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  padding: 20px;
+  background-color: rgba(32, 28, 28, 0.5);
+}
+#inputFilter input  {
+  margin-top: 10px;
+}
+#inputFilter input  {
+  margin-top: 10px;
+}
+#inputFilter select  {
+  margin-top: 10px;
+}
+#inputFilter button {
+  margin-top: 10px;
+}
+.close {
+  color: white;
+  text-align: left;
+}
+#closeFilter {
+  width: 310px;
+  margin: auto;
+  display: none;
+}
+.pointer:hover {
+  cursor: pointer;
+}
+.filterContainer {
+  width: 200px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.sort {
+  margin-right: 10px;
+  font-size: 1rem;
 }

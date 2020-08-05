@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+.welcomeW {
+    height: 80vh;
+    display:flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+.welcome {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 100px;
+    font-family: 'Special Elite', cursive;
+    color: white;
+    letter-spacing: 2.2px;
+    text-shadow: black;
+}
+.welcome2 {
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
+    color: white;
+    font-weight: bold;
+}

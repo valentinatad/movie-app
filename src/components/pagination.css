@@ -1,0 +1,21 @@
+.pagination {
+   margin-bottom: 0px;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    position: relative; }
+.page-item{
+    margin: 5px;
+    color: rgb(56,35,63)e;
+    font-size: 1em;
+    font-family: 'Special Elite', cursive;
+
+}
+.page-link {
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(56,35,63);
+    font-size: 1em;
+
+
+}
