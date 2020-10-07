@@ -47,11 +47,16 @@ export const Search = () => {
   function handleClose(e) {
     let div = document.querySelector("#closeFilter");
     div.style.display = "none";
+    
     setTitle("");
     setYear("");
     setType("");
     let reset = document.querySelector("#reset");
     reset.value = "";
+    let select = document.querySelector("#select");
+    select.value = 'Type of video:'
+    let year = document.querySelector("#year")
+    year.value = "";
   }
   function handleFilter(e) {
     listOfMovies(search, title, year, type).then((res) => {
@@ -77,6 +82,11 @@ export const Search = () => {
     setType("");
     let reset = document.querySelector("#reset");
     reset.value = "";
+    let select = document.querySelector("#select");
+    select.value = 'Type of video:'
+    let year = document.querySelector("#year")
+    year.value = "";
+    
   }
   function sortDown(e) {
     let div = document.querySelector("#list");
@@ -158,7 +168,7 @@ export const Search = () => {
               max="2099"
               step="1"
               placeholder="Year"
-              id="reset"
+              id="inputYear"
               onChange={(e) => {
                 setYear(e.target.value);
               }}
@@ -167,7 +177,7 @@ export const Search = () => {
               onChange={(e) => {
                 setType(e.target.value);
               }}
-              id="reset"
+              id="select"
             >
               <option>Type of video:</option>
               <option>Movie</option>
